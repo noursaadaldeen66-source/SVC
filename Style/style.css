@@ -6,13 +6,13 @@
   --font-m: "Noto Serif JP", serif;
 }
 
-.nunito-sans-uniquifier {
+/* .nunito-sans-uniquifier {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100, "YTLC" 500;
-}
+} */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -196,8 +196,8 @@ main {
   left: 131px;
 }
 
-#work {
-  margin-top: 200px;
+#process {
+  margin-top: 300px;
 }
 .container {
   padding: 20px;
@@ -210,12 +210,13 @@ main {
   display: inline-block;
   margin-left: 170px;
 }
-span {
-  font-size: 20px;
+.title-h1 span {
   color: white;
   display: inline-block;
   transform: rotate(-90deg);
   font-family: var(--font-L);
+  font-size: 20px;
+  list-style: 10px;
 }
 
 .grid {
@@ -236,18 +237,20 @@ span {
   border: 1px solid rgba(255, 255, 255, 0.205);
 }
 
-.grid-item h2 {
-  font-size: 30px;
+.grid-item .h {
+  position: relative;
+  font-size: 20px;
   color: var(--secondary-color);
   margin-top: -50px;
   width: 100px;
   font-family: var(--font-L);
+  left: -60px;
 }
 
 .grid-item p {
   position: absolute;
-  font-size: 18px;
-  color: #cccccca5;
+  font-size: 16px;
+  color: #ccccccc7;
   width: 160px;
   line-height: 1.3;
   margin-top: 50px;
@@ -330,14 +333,14 @@ span {
 
 .triangles {
   position: absolute;
-  bottom: 20px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
   bottom: unset;
-  left: 100px;
-  transform: rotate(-100deg);
+  left: 110px;
+  transform: rotate(-150deg);
 }
 
 .triangles::before {
@@ -348,8 +351,8 @@ span {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 30px solid #00ced1;
-  top: 0;
-  left: -25px;
+  top: 10;
+  left: -55px;
 }
 
 .triangles::after {
@@ -361,9 +364,16 @@ span {
   border-right: 20px solid transparent;
   border-bottom: 30px solid #00ced1;
   top: 0;
-  left: 30px;
+  left: 40px;
   transform: rotate(35deg);
 }
 .tow {
   transform: rotate(135deg);
+}
+h4 {
+  color: #ffffffd5;
+  font-family: var(--font-L);
+  margin-top: 60px;
+  left: 280px;
+  position: relative;
 }
